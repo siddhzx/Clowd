@@ -68,14 +68,14 @@ Display all available agents from installed plugins, showing their resolved mode
 
 Agent model settings can be overridden in `~/.claude/settings.json`:
 
-\```json
+```json
 {
   "agentSettings": {
     "plugin-name:agent-name": "inherit",
     "another-plugin:another-agent": "opus"
   }
 }
-\```
+```
 
 **Available models:**
 - `inherit` - Use the same model as the parent session
