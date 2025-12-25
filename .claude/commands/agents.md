@@ -13,6 +13,7 @@ Display all available agents from installed plugins, showing their resolved mode
    ```
    pattern: "**/agents/*.md"
    ```
+   This will search recursively for all agent files in plugins directories.
 
 2. **Load agentSettings from settings.json**:
    - Use Read to load `~/.claude/settings.json`
