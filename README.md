@@ -42,6 +42,13 @@ NOTE: If installing with NPM, you also need to install [Node.js 18+](https://nod
 
 This repository includes several Claude Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
 
+## Examples
+
+The [examples directory](./examples/README.md) contains configuration examples and reference implementations, including:
+
+- **[Agent Settings Configuration](./examples/settings/AGENT_SETTINGS_README.md)**: Learn how to configure agent model overrides using the `agentSettings` field in your `settings.json`
+- **[Settings Examples](./examples/settings/)**: Complete working examples of settings.json configurations
+
 ## Reporting Bugs
 
 We welcome your feedback. Use the `/bug` command to report issues directly within Claude Code, or file a [GitHub issue](https://github.com/anthropics/claude-code/issues).
