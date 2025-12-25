@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/settings.schema.json",
+  "agentSettings": {
+    "feature-dev:code-architect": "inherit",
+    "feature-dev:code-explorer": "inherit",
+    "feature-dev:code-reviewer": "inherit",
+    "pr-review-toolkit:code-simplifier": "inherit",
+    "pr-review-toolkit:comment-analyzer": "inherit",
+    "pr-review-toolkit:pr-test-analyzer": "inherit",
+    "pr-review-toolkit:type-design-analyzer": "inherit",
+    "pr-review-toolkit:silent-failure-hunter": "inherit",
+    "pr-review-toolkit:code-reviewer": "inherit",
+    "hookify:conversation-analyzer": "inherit",
+    "plugin-dev:agent-creator": "opus",
+    "plugin-dev:plugin-validator": "sonnet",
+    "plugin-dev:skill-reviewer": "sonnet",
+    "agent-sdk-dev:agent-sdk-verifier-ts": "sonnet",
+    "agent-sdk-dev:agent-sdk-verifier-py": "sonnet"
+  }
+}
