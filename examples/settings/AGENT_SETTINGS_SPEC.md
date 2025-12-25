@@ -337,5 +337,6 @@ For developers fixing these issues:
 ## 8. Reference Files
 
 - Example configuration: [agent-settings-example.json](./agent-settings-example.json)
+- TypeScript reference implementation: [agent-settings-resolver.ts](./agent-settings-resolver.ts)
 - User documentation: [AGENT_SETTINGS_README.md](./AGENT_SETTINGS_README.md)
 - Plugin agent examples: [../plugins/*/agents/*.md](../../plugins/)

@@ -9,6 +9,7 @@ This directory contains examples and reference implementations for Claude Code f
 Configuration examples for Claude Code settings.json files:
 
 - **[agent-settings-example.json](./settings/agent-settings-example.json)**: Complete example showing how to configure agent model overrides using `agentSettings`
+- **[agent-settings-resolver.ts](./settings/agent-settings-resolver.ts)**: TypeScript reference implementation showing proper model resolution logic with executable test cases
 - **[AGENT_SETTINGS_README.md](./settings/AGENT_SETTINGS_README.md)**: User-friendly guide to configuring agent settings, including the `"inherit"` keyword
 - **[AGENT_SETTINGS_SPEC.md](./settings/AGENT_SETTINGS_SPEC.md)**: Technical specification for the `agentSettings` feature, including resolution logic, UI requirements, and test cases
 
@@ -28,6 +29,17 @@ To use agent model overrides:
 4. Use explicit model names (e.g., `"claude-haiku-4-20250513"`) for specific requirements
 
 See the [Agent Settings README](./settings/AGENT_SETTINGS_README.md) for detailed documentation.
+
+### Running the Reference Implementation
+
+To run the TypeScript reference implementation and see test cases:
+
+```bash
+cd examples/settings
+npx tsx agent-settings-resolver.ts
+```
+
+This will execute all test cases and demonstrate proper model resolution.
 
 ### Finding Agent Names
 

@@ -4,6 +4,7 @@
 
 - Added comprehensive documentation for `agentSettings` configuration in settings.json
 - Added examples showing how to use the `"inherit"` keyword for agent model configuration
+- Added TypeScript reference implementation for agent model resolution with executable test cases
 - Added technical specification for `agentSettings` feature including resolution logic and test cases
 - Added troubleshooting guide for common `agentSettings` issues
 

@@ -212,4 +212,5 @@ To discover available agents and their names:
 
 ## Reference Implementation
 
-See [agent-settings-example.json](./agent-settings-example.json) for a complete working example.
+- [agent-settings-example.json](./agent-settings-example.json) - Complete working configuration example
+- [agent-settings-resolver.ts](./agent-settings-resolver.ts) - TypeScript reference implementation with test cases
