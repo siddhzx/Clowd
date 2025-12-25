@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.claude.com/schemas/settings.json",
+  "description": "Example settings.json demonstrating agentSettings configuration",
+  
+  "model": "claude-opus-4-5-20251101",
+  
+  "agentSettings": {
+    "debugging-toolkit:debugger": "inherit",
+    "unit-testing:test-automator": "inherit",
+    "documentation-generation:docs-architect": "inherit",
+    "code-review:reviewer": "claude-sonnet-4-20250514",
+    "quick-tasks:simple-helper": "claude-haiku-4-20250513"
+  },
+  
+  "_comment_agentSettings": [
+    "agentSettings allows you to override the default model for specific agents.",
+    "Format: 'plugin-name:agent-name' as the key, and model name or 'inherit' as the value.",
+    "",
+    "Model values:",
+    "  - 'inherit': Use the parent thread's resolved model (recommended)",
+    "  - Specific model name: e.g., 'claude-opus-4-5-20251101', 'claude-sonnet-4-20250514', 'claude-haiku-4-20250513'",
+    "",
+    "When 'inherit' is specified:",
+    "  1. The agent will use the same model as the main thread (specified in 'model' setting above)",
+    "  2. The /agents command should display the resolved model, not the literal 'inherit' string",
+    "  3. API calls should send the resolved model name, never the string 'inherit'",
+    "",
+    "Example resolution with current settings:",
+    "  - 'debugging-toolkit:debugger' resolves to 'claude-opus-4-5-20251101' (inherited from main thread)",
+    "  - 'unit-testing:test-automator' resolves to 'claude-opus-4-5-20251101' (inherited)",
+    "  - 'documentation-generation:docs-architect' resolves to 'claude-opus-4-5-20251101' (inherited)",
+    "  - 'code-review:reviewer' uses explicit 'claude-sonnet-4-20250514'",
+    "  - 'quick-tasks:simple-helper' uses explicit 'claude-haiku-4-20250513'"
+  ]
+}
