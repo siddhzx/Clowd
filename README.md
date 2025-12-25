@@ -42,6 +42,34 @@ NOTE: If installing with NPM, you also need to install [Node.js 18+](https://nod
 
 This repository includes several Claude Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
 
+## Custom Commands
+
+This repository also includes custom commands to enhance Claude Code functionality:
+
+### `/agents` - Fixed Agent Display
+
+The built-in `/agents` command displays agent models but doesn't show the resolved values after applying `agentSettings` overrides from `settings.json`. This custom `/agents` command fixes that by:
+
+- Displaying **resolved model configurations** with clear visual indicators
+- Showing which agents have overridden settings (bold text with ⚙️ icon)
+- Helping verify your `agentSettings` configuration
+- Providing documentation on how to configure agent models
+
+**Usage Example:**
+```json
+// In ~/.claude/settings.json
+{
+  "agentSettings": {
+    "feature-dev:code-architect": "inherit",
+    "pr-review-toolkit:code-simplifier": "opus"
+  }
+}
+```
+
+Then run `/agents` to see your resolved configurations.
+
+See [.claude/README.md](./.claude/README.md) for more details.
+
 ## Reporting Bugs
 
 We welcome your feedback. Use the `/bug` command to report issues directly within Claude Code, or file a [GitHub issue](https://github.com/anthropics/claude-code/issues).
